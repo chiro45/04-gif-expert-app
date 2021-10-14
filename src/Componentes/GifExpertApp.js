@@ -14,7 +14,7 @@ export const GifExpertApp = () =>{
         <h2>GifExpertApp</h2>
         <hr/>
 
-        <button onClick={handleAdd}>Agregar</button>
+        <button onClick={handleAdd}>Agregarrrr</button>
         <ol>
 
         {
