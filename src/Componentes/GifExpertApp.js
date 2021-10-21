@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { GifGrid } from './GifGrid';
 
 
-export const GifExpertApp = () =>{
+export const GifExpertApp = ({ defaultCategories=[]}) =>{
     
-    const [categories, setCategories] = useState( ['Avengers']);
+    const [categories, setCategories] = useState( defaultCategories);
     // const handleAdd = ()=>{
     //    setcategories([...categories, "juan CArlo"])
     // }
@@ -26,7 +26,6 @@ export const GifExpertApp = () =>{
                        key={category}
                        category={category}/>
                     )
-        
         )}
 
         </ol>
