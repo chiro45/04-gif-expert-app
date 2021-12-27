@@ -1,10 +1,13 @@
-
-
-
+//realizamos una funcion async
  export const getGifs = async(category)=>{
-    const url = `https://api.giphy.com/v1/gifs/search?q=${ encodeURI( category ) }&limit=12&api_key=0p5QcgB8WR8jiCntwt0Dd4vibpEqZPGz`
+     //definimos la url con los cambios que esta va a tener
+     //el encode sirve para las url
+    const url = `https://api.giphy.com/v1/gifs/search?q=${ encodeURI( category ) }&limit=10&api_key=0p5QcgB8WR8jiCntwt0Dd4vibpEqZPGz`
+    //le decimos que utilice la funcion fetch
     const respuesta = await fetch(url);
+    //desestructuramos en data la respuesta convertida en json
     const {data} = await respuesta.json();
+    //retorna los gifs
     const gifs = data.map(img =>{
         return{
             id: img.id,

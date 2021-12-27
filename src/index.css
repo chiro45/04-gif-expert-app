@@ -3,13 +3,14 @@
 
 }
 body{
-    background-color: rgb(233, 231, 231);
+    background-color: rgb(245, 245, 245);
     padding: 2rem;
 }
 input{
     color: grey;
     font-size: 1.2rem;
-    width: 100%;
+    width: 60%;
+    border-radius: .3rem;
 
 }
 
@@ -25,12 +26,12 @@ input{
 }
 .card:hover{
     cursor: pointer;
-    background-color: rgb(189, 188, 188);
+    background-color: rgb(255, 255, 255);
     border: 3px solid rgba(156, 97, 216, 0.623);
 
 }
 .card p{
-    padding: .3rem;
+    padding: .2rem;
     text-align: center;
     background-color: rgb(238, 238, 238);
     border-radius: .4rem;
@@ -38,7 +39,7 @@ input{
 }
 
 .card img{
-    max-height: 170px;
+    width: 40%;
     border-radius: .4rem;
 }
 
